@@ -2,6 +2,10 @@
 
 Wrecking the internet has never been so easy: glitch up the web for an anarchist's utopia!
 
+## Glitch
+
+The JS script will glitch up the text content of any webpage. Glitch level will also increase as you scroll.
+
 ## Usage
 
 ### Chrome Extension
@@ -15,3 +19,4 @@ Wrecking the internet has never been so easy: glitch up the web for an anarchist
 ### Example Page
 
 - Link: https://www.jzqiu.com/glitch_utopia
+
