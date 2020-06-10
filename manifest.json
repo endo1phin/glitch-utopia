@@ -1,0 +1,23 @@
+{
+    "name": "Glitcherious",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "Wreck the internet made easy: another step toward a glitch utopia.",
+    "background": {
+        "scripts": [
+          "background.js"
+        ],
+        "persistent": true
+      },
+      "browser_action": {
+        "default_title": "Inject!"
+      },
+      "permissions": [
+        "https://*/*",
+        "http://*/*",
+        "tabs"
+      ],
+      "icons": {
+        "48": "icon48.png"
+      }
+    }
