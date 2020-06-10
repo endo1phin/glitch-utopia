@@ -4,7 +4,6 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Glitch art - Wikipedia</title>
 	<style>
 		body {
@@ -1047,7 +1046,7 @@ function generateNthGlitchStyle(n, clv){
     let cTops = [randFromRange(0,3*clv,2), randFromRange(2*clv,4*clv,2)];
     let cBots = [randFromRange(2*clv,4*clv,2), randFromRange(0,3*clv,2)];
 
-    let anime = clv >= 6 ? generateAnimation(n, clv) : ['','',''];
+    let anime = clv >= 4 ? generateAnimation(n, clv) : ['','',''];
     let transformation = clv >= 8 ? generateTransformation(n) : '';
 
     return `
@@ -1131,7 +1130,6 @@ function addGlitch(dom) {
     let scrolled = document.documentElement.scrollTop;
     let total = document.body.scrollHeight;
     let clv = Math.floor(Math.sqrt(scrolled/total)*10+2); // chaos level
-    console.log(clv);
     let style = generateNthGlitchStyle(n, clv);
     styleDOM.innerHTML = style;
     dom.parentNode.insertBefore(styleDOM, dom);
